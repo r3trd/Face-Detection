@@ -5,7 +5,7 @@ import time
 import copy
 
 path = input("Enter the path of the image to be processed: ")
-img = cv.imread(path) # reads image in GBR mode
+img = cv.imread(path) # reads image in BGR mode
 img_copy = copy.copy(img)
 gray_img = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
